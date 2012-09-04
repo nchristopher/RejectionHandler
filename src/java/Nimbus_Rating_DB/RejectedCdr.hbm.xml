@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27-Jul-2011 11:00:39 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="ormakeplus" name="Nimbus_Rating_DB.RejectedCdr" schema="dbo" table="rejected_cdr">
+    <id name="id" type="int">
+      <column name="ID"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="originalData" type="string">
+      <column length="999" name="ORIGINAL_DATA" not-null="true"/>
+    </property>
+    <property name="rejectionReason" type="string">
+      <column length="99" name="REJECTION_REASON" not-null="true"/>
+    </property>
+    <property name="rejectionTimestamp" type="int">
+      <column name="REJECTION_TIMESTAMP" not-null="true"/>
+    </property>
+    <property name="state" type="int">
+      <column name="STATE" not-null="true"/>
+    </property>
+    <property name="suspenseCategory" type="string">
+      <column length="999" name="SUSPENSE_CATEGORY" not-null="true"/>
+    </property>
+    <property name="diagnosticInfo" type="string">
+      <column length="999" name="DIAGNOSTIC_INFO"/>
+    </property>
+    <property name="entryDate" type="timestamp">
+      <column length="23" name="EntryDate"/>
+    </property>
+    <property name="callReference" type="string">
+      <column length="36" name="CallReference"/>
+    </property>
+    <property name="network" type="string">
+      <column length="10" name="Network"/>
+    </property>
+    <property name="callType" type="string">
+      <column length="3" name="CallType"/>
+    </property>
+    <property name="remoteNetwork" type="string">
+      <column length="10" name="RemoteNetwork"/>
+    </property>
+    <property name="supplierSwitch" type="string">
+      <column length="31" name="SupplierSwitch"/>
+    </property>
+    <property name="direction" type="string">
+      <column length="3" name="Direction"/>
+    </property>
+    <property name="portingPrefix" type="string">
+      <column length="10" name="PortingPrefix"/>
+    </property>
+    <property name="cli" type="string">
+      <column length="31" name="CLI"/>
+    </property>
+    <property name="destination" type="string">
+      <column length="31" name="Destination"/>
+    </property>
+    <property name="usageType" type="string">
+      <column length="3" name="UsageType"/>
+    </property>
+    <property name="numberType" type="string">
+      <column length="20" name="NumberType"/>
+    </property>
+    <property name="dateTime" type="timestamp">
+      <column length="23" name="DateTime"/>
+    </property>
+    <property name="duration" type="string">
+      <column length="10" name="Duration"/>
+    </property>
+    <property name="billingEntity" type="string">
+      <column length="31" name="BillingEntity"/>
+    </property>
+    <property name="displayNumber" type="string">
+      <column length="31" name="DisplayNumber"/>
+    </property>
+    <property name="platform" type="string">
+      <column length="10" name="Platform"/>
+    </property>
+    <property name="machine" type="string">
+      <column length="32" name="Machine"/>
+    </property>
+    <property name="linkNumber" type="string">
+      <column length="31" name="LinkNumber"/>
+    </property>
+  </class>
+</hibernate-mapping>

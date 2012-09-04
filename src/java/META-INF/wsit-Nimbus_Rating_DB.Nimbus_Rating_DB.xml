@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="RejectionHandlerService" targetNamespace="http://openRateDb/" xmlns:tns="http://openRateDb/" 
+ >
+    <message name="getCount"/>
+    <message name="getCountResponse"/>
+    <message name="getCategoryInfoByType"/>
+    <message name="getCategoryInfoByTypeResponse"/>
+    <message name="updateBillId"/>
+    <message name="updateBillIdResponse"/>
+    <message name="submitRejection"/>
+    <message name="submitRejectionResponse"/>
+    <message name="submitAllRejections"/>
+    <message name="submitAllRejectionsResponse"/>
+    <message name="getEvents"/>
+    <message name="getEventsResponse"/>
+    <message name="getGeo"/>
+    <message name="getGeoResponse"/>
+    <message name="getNonGeo"/>
+    <message name="getNonGeoResponse"/>
+    <portType name="RejectionHandler">
+        <operation name="getCount">
+            <input message="tns:getCount"/>
+            <output message="tns:getCountResponse"/>
+        </operation>
+        <operation name="getCategoryInfoByType">
+            <input message="tns:getCategoryInfoByType"/>
+            <output message="tns:getCategoryInfoByTypeResponse"/>
+        </operation>
+        <operation name="updateBillId">
+            <input message="tns:updateBillId"/>
+            <output message="tns:updateBillIdResponse"/>
+        </operation>
+        <operation name="submitRejection">
+            <input message="tns:submitRejection"/>
+            <output message="tns:submitRejectionResponse"/>
+        </operation>
+        <operation name="submitAllRejections">
+            <input message="tns:submitAllRejections"/>
+            <output message="tns:submitAllRejectionsResponse"/>
+        </operation>
+        <operation name="getEvents">
+            <input message="tns:getEvents"/>
+            <output message="tns:getEventsResponse"/>
+        </operation>
+        <operation name="getGeo">
+            <input message="tns:getGeo"/>
+            <output message="tns:getGeoResponse"/>
+        </operation>
+        <operation name="getNonGeo">
+            <input message="tns:getNonGeo"/>
+            <output message="tns:getNonGeoResponse"/>
+        </operation>
+    </portType>
+    <binding name="RejectionHandlerPortBinding" type="tns:RejectionHandler">
+        <operation name="getCount">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getCategoryInfoByType">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="updateBillId">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="submitRejection">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="submitAllRejections">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getEvents">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getGeo">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getNonGeo">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="RejectionHandlerService">
+        <port name="RejectionHandlerPort" binding="tns:RejectionHandlerPortBinding"/>
+    </service>
+</definitions>

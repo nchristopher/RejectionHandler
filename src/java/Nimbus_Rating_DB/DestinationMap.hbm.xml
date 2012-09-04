@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21-Sep-2011 10:52:15 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="Nimbus_Rating_DB.DestinationMap" table="destination_map" schema="dbo" catalog="Ormakeplus">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="mapGroup" type="string">
+            <column name="MAP_GROUP" length="24" />
+        </property>
+        <property name="prefix" type="string">
+            <column name="PREFIX" length="24" />
+        </property>
+        <property name="tierCode" type="string">
+            <column name="TIER_CODE" length="24" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="100" />
+        </property>
+        <property name="category" type="string">
+            <column name="CATEGORY" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

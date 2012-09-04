@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-Oct-2011 13:30:48 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="Nimbus_Rating_DB.NonGeo" table="`Non-Geo`" schema="dbo" catalog="Ormakeplus">
+        <composite-id name="id" class="Nimbus_Rating_DB.NonGeoId">
+            <key-property name="numbertype" type="string">
+                <column name="NUMBERTYPE" length="99" />
+            </key-property>
+            <key-property name="daytimeCalls" type="java.lang.Integer">
+                <column name="DAYTIME_CALLS" />
+            </key-property>
+            <key-property name="daytimeDuration" type="java.lang.Double">
+                <column name="DAYTIME_DURATION" precision="53" scale="0" />
+            </key-property>
+            <key-property name="daytimeRevenue" type="java.lang.Double">
+                <column name="DAYTIME_REVENUE" precision="53" scale="0" />
+            </key-property>
+            <key-property name="eveningCalls" type="java.lang.Integer">
+                <column name="EVENING_CALLS" />
+            </key-property>
+            <key-property name="eveningDuration" type="java.lang.Double">
+                <column name="EVENING_DURATION" precision="53" scale="0" />
+            </key-property>
+            <key-property name="eveningRevenue" type="java.lang.Double">
+                <column name="EVENING_REVENUE" precision="53" scale="0" />
+            </key-property>
+            <key-property name="wkdCalls" type="java.lang.Integer">
+                <column name="WKD_CALLS" />
+            </key-property>
+            <key-property name="wkdDuration" type="java.lang.Double">
+                <column name="WKD_DURATION" precision="53" scale="0" />
+            </key-property>
+            <key-property name="wkdRevenue" type="java.lang.Double">
+                <column name="WKD_REVENUE" precision="53" scale="0" />
+            </key-property>
+            <key-property name="totalCalls" type="java.lang.Integer">
+                <column name="TOTAL_CALLS" />
+            </key-property>
+            <key-property name="totalDuration" type="java.lang.Double">
+                <column name="TOTAL_DURATION" precision="53" scale="0" />
+            </key-property>
+            <key-property name="totalRevenue" type="java.lang.Double">
+                <column name="TOTAL_REVENUE" precision="53" scale="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
